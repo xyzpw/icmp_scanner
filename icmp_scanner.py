@@ -12,7 +12,7 @@ def scan(current_num):
         active_addresses.append(f"{address_range}{current_num}")
     print(f"{address_range}{current_num} {status}")
 
-address_range = input("Address Range: ")
+address_range = input("First 3 octets of IPv4: ")
 if address_range[len(address_range)-1] != '.': address_range += '.'
 timeout = int(input("Timeout: "))
 timeout /= 1000
